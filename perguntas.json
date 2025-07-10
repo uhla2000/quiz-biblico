@@ -1,0 +1,24 @@
+[
+  {
+    "question": "Quem construiu a arca para sobreviver ao Dilúvio? (Gênesis 6:14)",
+    "answers": ["Abraão", "Moisés", "Noé", "Davi"],
+    "correct": "Noé",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/The_Ark_-_Google_Art_Project.jpg/640px-The_Ark_-_Google_Art_Project.jpg"
+  },
+  {
+    "question": "Qual é o primeiro livro da Bíblia?",
+    "answers": ["Salmos", "Gênesis", "Mateus", "Êxodo"],
+    "correct": "Gênesis"
+  },
+  {
+    "question": "Quantos livros tem a Bíblia? (66 no total)",
+    "answers": ["66", "73", "39", "100"],
+    "correct": "66"
+  },
+  {
+    "question": "Quem foi lançado na cova dos leões? (Daniel 6:16)",
+    "answers": ["Daniel", "José", "Paulo", "Pedro"],
+    "correct": "Daniel",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Daniel_in_the_Lion%27s_Den_-_Google_Art_Project.jpg/640px-Daniel_in_the_Lion%27s_Den_-_Google_Art_Project.jpg"
+  }
+]
