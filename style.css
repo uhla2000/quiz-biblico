@@ -1,36 +1,42 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #eef2f3;
-  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+  margin: 0;
+  padding: 0;
 }
-.quiz-container {
-  background-color: #fff;
+.container {
+  max-width: 700px;
+  margin: 40px auto;
   padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: auto;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: #ffffffdd;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-h1 {
+h1, h2 {
   text-align: center;
+  color: #2e7d32;
+}
+.hidden {
+  display: none;
 }
 .question {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 15px;
+  color: #1b5e20;
 }
 .answer {
   display: block;
   margin: 8px 0;
   padding: 10px;
-  background-color: #f1f1f1;
+  background-color: #c8e6c9;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   width: 100%;
-  text-align: left;
+  font-size: 16px;
 }
 .answer:hover {
-  background-color: #ddd;
+  background-color: #a5d6a7;
 }
 .result {
   font-weight: bold;
@@ -41,15 +47,35 @@ h1 {
   font-size: 18px;
   font-weight: bold;
 }
-#restart {
+#restart, #start-screen button, #add-question-container button {
   margin-top: 20px;
-  padding: 10px;
+  padding: 10px 15px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
-  background-color: #007bff;
+  border-radius: 6px;
+  background-color: #388e3c;
   color: white;
   border: none;
+}
+#restart:hover, #start-screen button:hover, #add-question-container button:hover {
+  background-color: #2e7d32;
+}
+form {
+  margin-top: 20px;
+}
+form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background-color: #00796b;
+}
+form button:hover {
+  background-color: #00695c;
 }
 #image-container img {
   max-width: 100%;

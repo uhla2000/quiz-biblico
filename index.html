@@ -7,28 +7,40 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="quiz-container">
+  <div class="container">
     <h1>Quiz Bíblico</h1>
-    <div id="question" class="question"></div>
-    <div id="image-container"></div>
-    <div id="answers"></div>
-    <div id="result" class="result"></div>
-    <div id="score" class="score"></div>
-    <button id="restart" style="display:none;">Reiniciar</button>
 
-    <h2>Adicionar Nova Pergunta</h2>
-    <form id="add-question-form">
-      <input type="text" id="new-question" placeholder="Pergunta" required><br>
-      <input type="text" id="answer1" placeholder="Resposta 1" required><br>
-      <input type="text" id="answer2" placeholder="Resposta 2" required><br>
-      <input type="text" id="answer3" placeholder="Resposta 3" required><br>
-      <input type="text" id="answer4" placeholder="Resposta 4" required><br>
-      <input type="text" id="correct-answer" placeholder="Resposta Correta" required><br>
-      <input type="text" id="image-url" placeholder="URL da imagem (opcional)"><br>
-      <button type="submit">Adicionar Pergunta</button>
-    </form>
+    <div id="start-screen">
+      <p>Quantas perguntas você quer responder?</p>
+      <button onclick="startQuiz(5)">5 Perguntas</button>
+      <button onclick="startQuiz(10)">10 Perguntas</button>
+      <button onclick="showAddForm()">Adicionar Perguntas</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+      <div id="question" class="question"></div>
+      <div id="image-container"></div>
+      <div id="answers"></div>
+      <div id="result" class="result"></div>
+      <div id="score" class="score"></div>
+      <button id="restart">Reiniciar</button>
+    </div>
+
+    <div id="add-question-container" class="hidden">
+      <h2>Adicionar Nova Pergunta</h2>
+      <form id="add-question-form">
+        <input type="text" id="new-question" placeholder="Pergunta" required><br>
+        <input type="text" id="answer1" placeholder="Resposta 1" required><br>
+        <input type="text" id="answer2" placeholder="Resposta 2" required><br>
+        <input type="text" id="answer3" placeholder="Resposta 3" required><br>
+        <input type="text" id="answer4" placeholder="Resposta 4" required><br>
+        <input type="text" id="correct-answer" placeholder="Resposta Correta" required><br>
+        <input type="text" id="image-url" placeholder="URL da imagem (opcional)"><br>
+        <button type="submit">Adicionar Pergunta</button>
+      </form>
+      <button onclick="backToMenu()">Voltar ao Menu</button>
+    </div>
   </div>
-
   <script src="quiz.js"></script>
 </body>
 </html>

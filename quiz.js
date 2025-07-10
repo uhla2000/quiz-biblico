@@ -1,6 +1,7 @@
 let quiz = [];
 let currentQuestion = 0;
 let score = 0;
+let selectedQuestions = [];
 
 async function loadDefaultQuestions() {
   const response = await fetch("perguntas.json");
@@ -15,6 +16,14 @@ async function loadQuestions() {
     quiz = await loadDefaultQuestions();
     localStorage.setItem("quizQuestions", JSON.stringify(quiz));
   }
+}
+
+function startQuiz(numQuestions) {
+  document.getElementById("start-screen").classList.add("hidden");
+  document.getElementById("quiz-container").classList.remove("hidden");
+  currentQuestion = 0;
+  score = 0;
+  selectedQuestions = shuffleArray([...quiz]).slice(0, numQuestions);
   showQuestion();
 }
 
@@ -24,23 +33,20 @@ function showQuestion() {
   const resultEl = document.getElementById("result");
   const imageContainer = document.getElementById("image-container");
   const scoreEl = document.getElementById("score");
-  const restartBtn = document.getElementById("restart");
 
   resultEl.textContent = "";
   answersEl.innerHTML = "";
   scoreEl.textContent = "";
   imageContainer.innerHTML = "";
 
-  restartBtn.style.display = "none";
-
-  if (currentQuestion >= quiz.length) {
+  if (currentQuestion >= selectedQuestions.length) {
     questionEl.textContent = "Fim do Quiz!";
-    scoreEl.textContent = `Sua pontuação: ${score} de ${quiz.length}`;
-    restartBtn.style.display = "block";
+    scoreEl.textContent = `Sua pontuação: ${score} de ${selectedQuestions.length}`;
+    document.getElementById("restart").style.display = "block";
     return;
   }
 
-  const q = quiz[currentQuestion];
+  const q = selectedQuestions[currentQuestion];
   questionEl.textContent = q.question;
 
   if (q.image) {
@@ -59,7 +65,7 @@ function showQuestion() {
 }
 
 function checkAnswer(selected) {
-  const correct = quiz[currentQuestion].correct;
+  const correct = selectedQuestions[currentQuestion].correct;
   const resultEl = document.getElementById("result");
 
   if (selected === correct) {
@@ -75,11 +81,27 @@ function checkAnswer(selected) {
   setTimeout(showQuestion, 2000);
 }
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 document.getElementById("restart").onclick = () => {
-  currentQuestion = 0;
-  score = 0;
-  showQuestion();
+  location.reload();
 };
+
+function showAddForm() {
+  document.getElementById("start-screen").classList.add("hidden");
+  document.getElementById("add-question-container").classList.remove("hidden");
+}
+
+function backToMenu() {
+  document.getElementById("add-question-container").classList.add("hidden");
+  document.getElementById("start-screen").classList.remove("hidden");
+}
 
 document.getElementById("add-question-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -113,10 +135,6 @@ document.getElementById("add-question-form").addEventListener("submit", function
   localStorage.setItem("quizQuestions", JSON.stringify(quiz));
   alert("Pergunta adicionada com sucesso!");
   this.reset();
-
-  if (currentQuestion >= quiz.length - 1) {
-    document.getElementById("restart").style.display = "block";
-  }
 });
 
 loadQuestions();
