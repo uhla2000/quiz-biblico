@@ -1,24 +1,152 @@
 [
   {
-    "question": "Quem construiu a arca para sobreviver ao Dilúvio? (Gênesis 6:14)",
-    "answers": ["Abraão", "Moisés", "Noé", "Davi"],
-    "correct": "Noé",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/The_Ark_-_Google_Art_Project.jpg/640px-The_Ark_-_Google_Art_Project.jpg"
+    "question": "Quem guiou os israelitas na travessia do Mar Vermelho?",
+    "answers": ["Arão", "Josué", "Moisés", "Davi"],
+    "correct": "Moisés"
   },
   {
-    "question": "Qual é o primeiro livro da Bíblia?",
-    "answers": ["Salmos", "Gênesis", "Mateus", "Êxodo"],
-    "correct": "Gênesis"
+    "question": "Quantos livros há no Novo Testamento?",
+    "answers": ["39", "27", "66", "33"],
+    "correct": "27"
   },
   {
-    "question": "Quantos livros tem a Bíblia? (66 no total)",
-    "answers": ["66", "73", "39", "100"],
-    "correct": "66"
+    "question": "Quem traiu Jesus por 30 moedas de prata?",
+    "answers": ["Pedro", "Tomé", "Judas Iscariotes", "João"],
+    "correct": "Judas Iscariotes"
   },
   {
-    "question": "Quem foi lançado na cova dos leões? (Daniel 6:16)",
-    "answers": ["Daniel", "José", "Paulo", "Pedro"],
-    "correct": "Daniel",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Daniel_in_the_Lion%27s_Den_-_Google_Art_Project.jpg/640px-Daniel_in_the_Lion%27s_Den_-_Google_Art_Project.jpg"
+    "question": "Qual o primeiro milagre de Jesus?",
+    "answers": ["Curar um cego", "Ressuscitar Lázaro", "Caminhar sobre as águas", "Transformar água em vinho"],
+    "correct": "Transformar água em vinho"
+  },
+  {
+    "question": "Quem foi lançado na fornalha ardente e saiu ileso?",
+    "answers": ["Daniel", "Sadraque, Mesaque e Abednego", "Elias e Eliseu", "Paulo e Silas"],
+    "correct": "Sadraque, Mesaque e Abednego"
+  },
+  {
+    "question": "Qual o nome do homem que construiu o templo em Jerusalém?",
+    "answers": ["Davi", "Salomão", "Saul", "Ezequias"],
+    "correct": "Salomão"
+  },
+  {
+    "question": "Quem foi engolido por um grande peixe?",
+    "answers": ["Paulo", "Elias", "Jonas", "Pedro"],
+    "correct": "Jonas"
+  },
+  {
+    "question": "Qual o fruto que Adão e Eva comeram no Éden?",
+    "answers": ["Maçã", "Figo", "A Bíblia não especifica", "Uva"],
+    "correct": "A Bíblia não especifica"
+  },
+  {
+    "question": "Qual discípulo andou sobre as águas com Jesus?",
+    "answers": ["João", "Pedro", "Tiago", "Tomé"],
+    "correct": "Pedro"
+  },
+  {
+    "question": "Quem foi a primeira mulher mencionada na Bíblia?",
+    "answers": ["Sara", "Rebeca", "Maria", "Eva"],
+    "correct": "Eva"
+  },
+  {
+    "question": "Quantos dias e noites choveu durante o Dilúvio?",
+    "answers": ["30", "40", "50", "60"],
+    "correct": "40"
+  },
+  {
+    "question": "Qual profeta desafiou os profetas de Baal no Monte Carmelo?",
+    "answers": ["Elias", "Eliseu", "Samuel", "Isaías"],
+    "correct": "Elias"
+  },
+  {
+    "question": "Quem foi o rei que escreveu muitos dos Salmos?",
+    "answers": ["Salomão", "Davi", "Josias", "Ezequias"],
+    "correct": "Davi"
+  },
+  {
+    "question": "Em qual cidade Jesus nasceu?",
+    "answers": ["Nazaré", "Belém", "Jerusalém", "Cafarnaum"],
+    "correct": "Belém"
+  },
+  {
+    "question": "Qual apóstolo negou Jesus três vezes?",
+    "answers": ["Pedro", "João", "Tiago", "André"],
+    "correct": "Pedro"
+  },
+  {
+    "question": "Quem foi jogado na cova dos leões e saiu ileso?",
+    "answers": ["Sadraque", "Daniel", "Abednego", "Eliseu"],
+    "correct": "Daniel"
+  },
+  {
+    "question": "Qual foi o nome do gigante derrotado por Davi?",
+    "answers": ["Golias", "Saul", "Nabucodonosor", "Sansão"],
+    "correct": "Golias"
+  },
+  {
+    "question": "Quem era conhecido como “o precursor” de Jesus, que batizava no rio Jordão?",
+    "answers": ["Pedro", "João Batista", "Paulo", "Filipe"],
+    "correct": "João Batista"
+  },
+  {
+    "question": "Quem escreveu o livro de Apocalipse?",
+    "answers": ["Paulo", "João", "Pedro", "Tiago"],
+    "correct": "João"
+  },
+  {
+    "question": "Qual rei teve um sonho com uma estátua feita de vários metais?",
+    "answers": ["Nabucodonosor", "Davi", "Salomão", "Acabe"],
+    "correct": "Nabucodonosor"
+  },
+  {
+    "question": "Qual foi o nome do homem que pediu o corpo de Jesus para enterrá-lo?",
+    "answers": ["José de Arimateia", "Nicodemos", "Simão Cireneu", "Caifás"],
+    "correct": "José de Arimateia"
+  },
+  {
+    "question": "Quem foi o profeta que confrontou o rei Acabe?",
+    "answers": ["Elias", "Eliseu", "Jeremias", "Isaías"],
+    "correct": "Elias"
+  },
+  {
+    "question": "Qual cidade foi destruída por Deus por causa da maldade?",
+    "answers": ["Sodoma", "Nínive", "Jericó", "Babilônia"],
+    "correct": "Sodoma"
+  },
+  {
+    "question": "Quem foi o primeiro rei de Israel?",
+    "answers": ["Davi", "Saul", "Salomão", "Nabucodonosor"],
+    "correct": "Saul"
+  },
+  {
+    "question": "Quantos irmãos José, filho de Jacó, tinha?",
+    "answers": ["10", "11", "12", "13"],
+    "correct": "11"
+  },
+  {
+    "question": "Qual discípulo escreveu o Evangelho que tem mais detalhes sobre o nascimento de Jesus?",
+    "answers": ["Mateus", "Lucas", "João", "Marcos"],
+    "correct": "Lucas"
+  },
+  {
+    "question": "Qual profeta foi conhecido por sua paciência e confiança em Deus?",
+    "answers": ["Jó", "Elias", "Jeremias", "Daniel"],
+    "correct": "Jó"
+  },
+  {
+    "question": "Quem foi lançado na prisão com Paulo?",
+    "answers": ["Silas", "Barnabé", "Timóteo", "Lucas"],
+    "correct": "Silas"
+  },
+  {
+    "question": "Quantos dias Jesus jejuou no deserto?",
+    "answers": ["20", "30", "40", "50"],
+    "correct": "40"
+  },
+  {
+    "question": "Qual mulher ajudou os espiões de Israel em Jericó?",
+    "answers": ["Rute", "Débora", "Raabe", "Ana"],
+    "correct": "Raabe"
   }
 ]
